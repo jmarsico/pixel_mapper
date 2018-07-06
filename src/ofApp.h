@@ -16,7 +16,9 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+    void drawContent();
     void saveToCsv();
+    void loadLightPoints();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -33,11 +35,20 @@ class ofApp : public ofBaseApp{
     ofxPanel gui;
     ofParameter<bool> bStartMapping;
     ofParameter<bool> bIsMapping;
+    ofParameter<bool> bPlay;
+    ofParameter<int> sampleSize;
+    ofParameter<bool> bLoadLightPoints;
     ofParameter<int> currLight;
+    ofParameter<int> numRecorded;
     ofParameter<int> bgThresh;
+    ofParameter<int> minSize;
+    ofParameter<int> maxSize;
+    ofParameter<int> dilation;
+    ofParameter<int> sleep;
     ofParameter<bool> bResetThresh;
     ofParameter<string> FPS;
     ofParameter<bool> bSaveToCsv;
+    ofParameter<float> contrast;
     
     
     int numLights;
@@ -54,5 +65,17 @@ class ofApp : public ofBaseApp{
     std::vector<ofPoint> points;
     
     ofxCsv csv;
+    CsvLoader csvLoader;
+    
+    vector<LightPoint> lightPoints;
+    
+    ofVideoPlayer player;
+    string csvFileName;
+    
+    ofFbo samplerFbo;
+    ofPixels samplerPix;
+    
+    ofShader shader;
+    
 		
 };

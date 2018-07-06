@@ -17,7 +17,7 @@ class LightPoint {
 public:
     LightPoint(){}
     
-    void setup(ofVec2f _loc, int _universe, int _startChan, int _frbk);
+    void setup(ofVec2f _loc, int _universe, int _startChan);
     void setAvgSamplingSize(int _numSamples);
     void setCurrentCol(ofColor _col);
     void draw();
@@ -27,7 +27,6 @@ public:
     ofVec2f getLoc() { return loc; }
     int getUniverse() { return universe; }
     int getStartChan() { return startChan; }
-    int getSideFrontBack() { return frbk; }
 
     
 

@@ -17,7 +17,7 @@ void CsvLoader::loadLightPoints(string filename){
 //                ofLog() << "num: " << lightsCsv.data[i][0] << " x: " << lightsCsv.data[i][1] << " y: " << lightsCsv.data[i][2];
         
         ofVec2f lp;
-        lp.set( lightLocationCsv.getRow(i).getInt(1),  -lightLocationCsv.getRow(i).getInt(2));
+        lp.set( lightLocationCsv.getRow(i).getFloat(0),  lightLocationCsv.getRow(i).getFloat(1));
         lightPoints.push_back(lp);
     }
     ofLog() << "number of light points in lightPoints vector: " << lightPoints.size();

@@ -1,6 +1,6 @@
 {
     "olaPort": 7770,
     "numUniv": 1,
-    "numLights": 75,
+    "numLights": 125,
     "mapCsvFile": "pixelMap.csv"
 }

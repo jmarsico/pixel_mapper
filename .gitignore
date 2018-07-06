@@ -12,6 +12,8 @@ Release*/
 *.app/
 *.pyc
 .svn/
+*.mp4
+*.mov
 
 
 #XCode

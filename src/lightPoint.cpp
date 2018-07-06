@@ -8,11 +8,10 @@
 
 #include "lightPoint.h"
 
-void LightPoint::setup(ofVec2f _loc, int _universe, int _startChan, int _frbk){
+void LightPoint::setup(ofVec2f _loc, int _universe, int _startChan){
     numSamples = 1;
     index = 0;
     loc = _loc;
-    frbk = _frbk;
     
     universe = _universe;
     startChan = _startChan;
@@ -32,6 +31,7 @@ void LightPoint::setAvgSamplingSize(int _numSamples){
             samples.push_back(0);
         }
         index = 0;
+        ofLog() << "resetting sample size";
     }
     
     

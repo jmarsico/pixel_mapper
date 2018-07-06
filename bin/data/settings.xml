@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<group>
+	<UnknownName>60</UnknownName>
+	<start_mapping>0</start_mapping>
+	<is_mapping>0</is_mapping>
+	<current_light>126</current_light>
+	<num_recorded>125</num_recorded>
+	<save_csv>0</save_csv>
+	<bgthresh>99</bgthresh>
+	<min_size>3</min_size>
+	<max_size>50</max_size>
+	<dilation>6</dilation>
+	<sleep_millis>245</sleep_millis>
+	<reset_thresh>0</reset_thresh>
+	<use_map_play>0</use_map_play>
+	<smoothing>13</smoothing>
+	<load_light_points>0</load_light_points>
+</group>
