@@ -6,7 +6,7 @@
 //
 //
 
-#include "utils/csvLoader.h"
+#include "csvLoader.h"
 
 void CsvLoader::loadLightPoints(string filename){
     

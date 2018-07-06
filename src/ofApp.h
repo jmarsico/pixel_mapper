@@ -5,10 +5,10 @@
 #include "ofxCv.h"
 #include "ofxGui.h"
 #include "ofxJSON.h"
-
+#include "ofxCsv.h"
 #include "olaSender.h"
 #include "lightPoint.h"
-//#include "csvLoader.h"
+#include "csvLoader.h"
 
 class ofApp : public ofBaseApp{
 
@@ -16,6 +16,7 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+    void saveToCsv();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -34,6 +35,9 @@ class ofApp : public ofBaseApp{
     ofParameter<bool> bIsMapping;
     ofParameter<int> currLight;
     ofParameter<int> bgThresh;
+    ofParameter<bool> bResetThresh;
+    ofParameter<string> FPS;
+    ofParameter<bool> bSaveToCsv;
     
     
     int numLights;
@@ -49,5 +53,6 @@ class ofApp : public ofBaseApp{
     
     std::vector<ofPoint> points;
     
+    ofxCsv csv;
 		
 };

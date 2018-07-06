@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "ofMain.h"
-//#include "ofxCsv.h"
+#include "ofxCsv.h"
 #include "lightPoint.h"
 
 
